@@ -1,0 +1,96 @@
+:root{
+    background-color: rgb(0, 0, 0);
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Ink free",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+#container{
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    justify-content: center;
+    width: 100w;
+    height: 80vh;
+    max-width: 1200px;
+    background-image: url(./img/bg.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#content{
+    display: grid;
+    grid-template-areas:
+        "header" "header"
+        "left side" "left side"
+        "bottom" "bottom";
+    
+    position: relative;
+    padding: 25px;
+    background-color: rgb(216, 210, 201);
+    max-width: 800px;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+#flexit{
+
+    display: grid;
+    grid-template-areas:
+        "header" "header"
+        "left side" "left side"
+        "bottom" "bottom";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#inputDiv{
+    width: 300px;
+    max-width: 300px;
+}
+
+label, input{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+
+label{
+    max-width: 300px;
+}
+input{
+    margin-bottom: 15px;
+    border:1px solid  rgba(0, 0, 0, 0.521);
+    box-shadow: 3px 3px 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+    height: 50px;
+}
+
+.wrongInput{
+    background-color: rgba(255, 0, 0, 0.164);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.error{
+
+}
+
+button{
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    color: white;
+    background-color: #46632d;
+    
+}

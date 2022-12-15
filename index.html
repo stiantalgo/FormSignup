@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="logo"></div>
+            <h1>This is a example of a signup page! By signing up you will have signed up on this signup form.</h1>
+            <h1>You did a <span style="text-decoration: underline">good</span> job!</h1>
+
+            <div id="formDiv">
+                <form action="">
+                    <div id="flexit">
+                        <div id="inputDiv">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="John">
+                        </div>
+                        <div id="inputDiv">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Smith">
+                        </div>
+                        <div id="inputDiv">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required placeholder="your@email.com" minlength="7" maxlength="69">
+                            <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div id="inputDiv">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="90909090">
+                        </div>
+                        <div id="inputDiv">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required placeholder="your password">
+                        </div>
+                        <div id="inputDiv">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required placeholder="your password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <button id="createBtn">Create Account</button>
+            <h4>Already have an account? <a href="#">Log in.</a></h4>
+        </div>
+    </div>
+</body>
+
+</html>
