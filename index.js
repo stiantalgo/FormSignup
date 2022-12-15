@@ -21,6 +21,9 @@ confirmPassword.addEventListener("keyup", () => {
     }else{
         confirmPassword.style.backgroundColor = "green";
     };
+    if(confirmPassword.value.length == 0){
+        confirmPassword.style.backgroundColor = "white";
+    }
 
 });
 
